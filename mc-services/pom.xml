@@ -29,6 +29,17 @@
   <artifactId>mc-services</artifactId>
   <name>MaritimeCloud Service</name>
   
+  <pluginRepositories>
+    <pluginRepository>
+      <id>this-will-go-away</id>
+      <name>this-will-go-away</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+  
   <build>
     <plugins>
       <plugin>
@@ -52,7 +63,7 @@
       <artifactId>mc-mms-client-impl</artifactId>
       <version>${project.version}</version>
       <!-- People might want to use their own custom version so scope is provided-->
-      <scope>provided</scope> 
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
