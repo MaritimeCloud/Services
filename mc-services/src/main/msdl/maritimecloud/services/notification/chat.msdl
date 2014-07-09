@@ -1,0 +1,12 @@
+namespace maritimecloud.services.common.notification;
+
+enum NotificationLevel {
+  HIGH = 1;
+  MIDDLE = 2;
+  LOW = 3;
+}
+
+message ChatMessage {
+  1: NotificationLevel level;
+  2: text msg;
+}

@@ -1,0 +1,44 @@
+namespace maritimecloud.services.examples;
+
+import "core/geometry.msdl";
+
+//These types are imported from "core/geometry.msdl"; 
+message Geometry1 {
+  1: Circle c1;
+  2: Rectangle b1;
+  3: Polygon p1;
+  4: Area area;
+}
+
+message AllTypes {
+  1: int f1;
+  2: int64 f2;
+  3: varint f3;
+  
+  4: float f4;
+  5: double f5;
+  6: decimal f6;
+  
+  7: boolean f7;
+  8: binary f8;
+  9: text f9;
+  10: timestamp f10;
+  
+  11: position f11;
+  12: positiontime f12;
+  
+  13: list<position> f13;
+  
+  14: set<position> f14;
+  
+  15: list<Geometry1> f15;
+}
+
+endpoint MathEndpoint {
+  int sum(1:int left, 2:int right, 3: list<text> strings);
+}
+
+endpoint ImageRender {
+  binary render(1:text str);
+}
+

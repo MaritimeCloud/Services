@@ -1,0 +1,35 @@
+namespace maritimecloud.services.common.route;
+
+enum HeadingType {
+    RHUMB_LINE = 1;
+    GREAT_CIRCLE = 2;
+}
+
+message Leg {
+    /** The speed of the xxx in meters/second */
+    1: float speed;
+    
+    2: float xtdStarboard;
+
+    3: float xtdPort;
+
+    4: HeadingType headingType;
+}
+
+message Waypoint {
+    1: position start;
+    2: timestamp eta;
+    3: float rot;
+    4: float turnRadius;
+    5: Leg outLeg;
+}
+
+message IntendedRoute {
+    1: int activeWaypointIndex;
+    2: list<timestamp> plannedEtas;
+    3: list<Waypoint> waypoints;
+}
+
+broadcast IntendedRouteBroadcast {
+   1: IntendedRoute indendedRoute;
+}
