@@ -38,15 +38,15 @@ message Waypoint {
 
     /** The turn radius of the vessel. In nautical miles. */
     4: float turnRadius;
+    
+    /** The waypoints outleg, will be null for the final waypoint. */
+    5: outleg;
 }
 
-/** Intended route. */
+/** Route. */
 message Route {
     /** A list of waypoints on the route . */
     1: list<Waypoint> waypoints;
-
-    /** A list of outgoing legs on the route. One for each leg except the last. */
-    2: list<Leg> outlegs;
 }
 
 broadcast IntendedRouteBroadcast {
