@@ -1,4 +1,4 @@
-namespace dma.intendedroutebroadcast;
+namespace dma.route;
 
 /** TODO: Move common route messages to dma.route and include here */
 
