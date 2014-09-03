@@ -23,7 +23,7 @@ message Leg {
     4: HeadingType headingType;
     
     /** The length of the navigational window in meters. */
-    5: double navWindow;
+    5: float navWindow;
 }
 
 /** A waypoint in a route. */
