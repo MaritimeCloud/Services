@@ -1,6 +1,6 @@
 namespace dma.route;
 
-/** TODO: Move common route messages to dma.route and include here */
+/** TODO: Move common route messages to route.msdl and include here */
 
 /** The heading of each leg. */
 enum HeadingType {
