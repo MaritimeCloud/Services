@@ -1,4 +1,4 @@
-namespace maritimecloud.services.common.route;
+namespace dma.intendedroutebroadcast;
 
 /** The heading of each leg. */
 enum HeadingType {
@@ -40,7 +40,7 @@ message Waypoint {
     4: float turnRadius;
     
     /** The waypoints outleg, will be null for the final waypoint. */
-    5: outleg;
+    5: Leg outleg;
 }
 
 /** Route. */
