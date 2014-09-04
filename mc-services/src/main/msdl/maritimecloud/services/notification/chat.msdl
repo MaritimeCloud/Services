@@ -6,7 +6,9 @@ enum NotificationLevel {
   LOW = 3;
 }
 
-message ChatMessage {
+endpoint ChatMessage {
+	void Msg(
   1: NotificationLevel level;
   2: text msg;
+  );
 }

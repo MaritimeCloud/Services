@@ -3,7 +3,7 @@ namespace dma.route;
 import "route.msdl";
 
 broadcast IntendedRouteBroadcast {
-    /** The route to follow. */
+    /** The route or route segment currently being followed by sender. */
     1: Route route;
 
     /** The currently active waypoint, points to an index in routes waypoint list. */
