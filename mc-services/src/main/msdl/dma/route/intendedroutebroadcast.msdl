@@ -1,6 +1,6 @@
 namespace dma.route;
 
-import "route.msdl";
+import "dma/route/route.msdl";
 
 broadcast IntendedRouteBroadcast {
     /** The route or route segment currently being followed by sender. */

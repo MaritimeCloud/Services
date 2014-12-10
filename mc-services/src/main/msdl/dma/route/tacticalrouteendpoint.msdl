@@ -1,6 +1,6 @@
 namespace dma.route;
 
-import "route.msdl";
+import "dma/route/route.msdl";
 
 /** Status of the Route Suggestion. */
 enum RouteSuggestionStatus {
@@ -13,10 +13,10 @@ endpoint TacticalRouteEndpoint {
 
 	void RouteSuggestion(
     /** The suggested route */
-    1: Route route;
+    1: Route route,
     /** The transaction ID */
-	2: int64 id;
+	2: int64 id,
 	/** The status, used for replying*/
-	3: RouteSuggestionStatus status;
+	3: RouteSuggestionStatus status
     );
 }

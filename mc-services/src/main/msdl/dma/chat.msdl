@@ -1,4 +1,4 @@
-namespace maritimecloud.services.common.notification;
+namespace dma;
 
 enum NotificationLevel {
   HIGH = 1;
@@ -8,7 +8,7 @@ enum NotificationLevel {
 
 endpoint ChatMessage {
 	void Msg(
-  1: NotificationLevel level;
-  2: text msg;
+  1: NotificationLevel level,
+  2: text msg
   );
 }

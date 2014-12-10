@@ -14,8 +14,6 @@
  */
 package net.maritimecloud.services.examples.notification;
 
-import maritimecloud.services.common.notification.ChatMessage;
-import maritimecloud.services.common.notification.NotificationLevel;
 
 /**
  *
@@ -23,13 +21,5 @@ import maritimecloud.services.common.notification.NotificationLevel;
  */
 public class ChatExample {
 
-    public static void main(String[] args) {
-        ChatMessage cm = new ChatMessage();
 
-        cm.setLevel(NotificationLevel.LOW);
-        cm.setMsg("HelloWorld");
-
-        System.out.println(cm.toJSON());
-
-    }
 }

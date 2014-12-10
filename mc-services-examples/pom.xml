@@ -22,10 +22,10 @@
   <groupId>org.maritimecloud.services.examples</groupId>
   <artifactId>mc-services-examples</artifactId>
   <name>MaritimeCloud Service Examples</name>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.3-SNAPSHOT</version>
   
   <properties>
-    <maritimecloud.version>0.2-SNAPSHOT</maritimecloud.version>
+    <maritimecloud.version>0.3-SNAPSHOT</maritimecloud.version>
   </properties>
   
   <build>
