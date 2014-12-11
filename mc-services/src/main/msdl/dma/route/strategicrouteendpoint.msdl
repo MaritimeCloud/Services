@@ -1,9 +1,9 @@
 namespace dma.route;
 
-import "dma/route/route.msdl";
+//import "route.msdl";
 
 /** Status of the Route Negotiation. */
-enum StrategicRouteStatus {
+enum MCStrategicRouteStatus {
     PENDING = 1;
     AGREED = 2;
     REJECTED = 3;
@@ -11,18 +11,18 @@ enum StrategicRouteStatus {
     CANCELED = 5;
 }
 
-endpoint TacticalRouteEndpoint {
+endpoint MCStrategicRouteEndpoint {
 
-	void RouteSuggestion(
-    /** The route under negotiation */
-    1: Route route,
-    /** The transaction ID */
-	2: int64 id,
-	/** The negotiation status*/
-	3: StrategicRouteStatus status,
-	/** Message originating from the STCC */
-	4: boolean fromStcc,
-	/** Message attached to the route negotiation */
-	5: text msg
+	void routeSuggestion(
+        /** The route under negotiation */
+        1: MCRoute route,
+        /** The transaction ID */
+        2: int64 id,
+        /** The negotiation status*/
+        3: MCStrategicRouteStatus status,
+        /** Message originating from the STCC */
+        4: boolean fromStcc,
+        /** Message attached to the route negotiation */
+        5: text msg
     );
 }
