@@ -47,5 +47,6 @@ message Waypoint {
 message Route {
     /** A list of waypoints on the route . */
     1: list<Waypoint> waypoints;
+	/** Optional Route name */
     2: text routename;
 }

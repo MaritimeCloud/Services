@@ -40,7 +40,7 @@
     </pluginRepository>
   </pluginRepositories>
   
-  <build>
+<build>
     <plugins>
       <plugin>
         <groupId>net.maritimecloud.msdl</groupId>
@@ -53,9 +53,13 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+           <implementsSerializable>true</implementsSerializable>
+        </configuration>  
       </plugin>
     </plugins>
-  </build>
+</build>
+
   
   <dependencies>
     <dependency>

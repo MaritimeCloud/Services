@@ -1,6 +1,6 @@
 namespace dma.voct;
 
-import "dma/route/Route.msdl";
+import "dma/route/route.msdl";
 
 
 /** The heading of each leg. */
